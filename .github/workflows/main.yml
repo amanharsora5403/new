@@ -4,11 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        python-version: [3.8, 3.9]
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
